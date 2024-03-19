@@ -66,8 +66,8 @@ def generate_qa(
     logger.info(f'The storage interval is: {interval}.')
 
     file_list = get_file_list()
-    storage_counter = 0
-    storage_list = []
+    logger.info(f'file_list:{file_list}')
+    storage_counter = 0 
     for file_path in file_list:
         contents = get_txt_content(file_path, window_size=window_size, overlap_size=overlap_size)
         storage_list = []
@@ -105,4 +105,5 @@ if __name__ == '__main__':
 
     # 创建generated文件夹
     os.makedirs('./data/generated', exist_ok=True)
+    logger.info(f'running qa_generation')
     generate_qa(interval=storage_interval)

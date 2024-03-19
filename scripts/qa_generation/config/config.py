@@ -29,7 +29,7 @@ wash_prompt_file_path = os.path.join(base_dir, 'choose_prompt.md')
 环境变量
 """
 # api-keys
-DASHSCOPE_API_KEY = ''
+DASHSCOPE_API_KEY = 'sk-d6721674df7143a5a4feaf9a01e8fd6b'
 
 
 """
